@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0;
+        }
+
+        .cta-buttons {
+            margin-top: 15px;
+        }
+
+        .cta-buttons a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #003f8c;
+        }
+
+        /* Features */
+        .features {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .features h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 40px 0;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            width: 80%;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width:768px) {
+            .feature-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 2rem;
+
+            }
+            .cta-buttons a {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+                text-align: center;
+            }
+
+            .testimonial {
+                width: 90%;
+            }
+
+        
+        }
+
+        @media (max-width:480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .cta-buttons a {
+                font-size: 1rem;
+            }
+
+            .feature h2, .contact h2 {
+                font-size: 1.5rem;
+            }
+        }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Cyberspot</h1>
+        <p>Your digital library with fast internet and unlimited learning opportunities for students.</p>
+        <div class="cta-buttons">
+            <a href="#features">Explore the Library</a>
+            <a href="#contact">Internet Access</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Key Features</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img src="high-speed-internet.png" alt="Internet">
+                <h3>High-Speed Internet</h3>
+                <p>Connect with blazing fast speed for seamless learning.</p>
+            </div>
+            <div class="feature">
+                <img src="ebooks.png" alt="eBooks">
+                <h3>Extensive e-Book Collection</h3>
+                <p>Access thousands of books at your fingertips.</p>
+            </div>
+            <div class="feature">
+                <img src="devices.png" alt="Devices">
+                <h3>Access on Any Device</h3>
+                <p>Mobile, tablet, or laptop - we support all.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Students Say</h2>
+        <div class="testimonial">
+            <p>"This library made it easy for me to complete my projects on time!"</p>
+            <p>- A Happy Student</p>
+        </div>
+        <div class="testimonial">
+            <p>"The internet speed is amazing, and the resources are vast!"</p>
+            <p>- Another Happy Student</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 123 Library Street, Knowledge City</p>
+        <p><strong>Email:</strong> contact@digitallibrary.com</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Digital Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
